@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
+  <body>
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="main-header-logo">
+				<a class="main-header-logo" href="index.html">
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 				</a>
 				<ul class="site-navigation">
@@ -21,61 +22,83 @@
 		</header>
 		
 		<main class="container">
-			<section class="filters">
-				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form class="filters-form" action="" method="get">
-					<fieldset class="filter-cost">
-						<legend>Стоимость:</legend>
-						<!--и все равно не понимаю до конца, как сделать, поэтому сделала часть от советуемого-->
+			<form class="filters-form" method="get">
+				<fieldset class="filter-cost">
+					<legend>Стоимость:</legend>
+					<div class="filter-button"></div>
+					<div class="slider-fill"></div>
+					<div class="slider"></div>
+					<p>
 						<label for="from">От</label>
 						<input type="text" name="from" id="from" placeholder="0">
+					</p>
+					<p>
 						<label for="before">До</label>
 						<input type="text" name="before" id="before" placeholder="15000">
-					</fieldset>
-					<fieldset class="filter-grid">
-						<legend>Сетка:</legend>
+					</p>
+				</fieldset>
+				<fieldset class="filter-grid">
+					<legend>Сетка:</legend>
+					<p>
 						<input type="radio" id="adaptive" name="adaptive" checked>
 						<label for="adaptive">Адаптивная</label>
+					</p>
+					<p>
 						<input type="radio" id="fixed" name="fixed">
 						<label for="fixed">Фиксированная</label>
+					</p>
+					<p>
 						<input type="radio" id="rubber" name="rubber">
 						<label for="rubber">Резиновая</label>
-					</fieldset>
-					<fieldset class="filter-3">
-						<legend>Особенности</legend>
+					</p>
+				</fieldset>
+				<fieldset class="filter-3">
+					<legend>Особенности</legend>
+					<p>
 						<input type="checkbox" id="slider" checked>
 						<label for="slider">Слайдер</label>
+					</p>
+					<p>
 						<input type="checkbox" id="block-advantages">
 						<label for="block-advantages">Блок преимуществ</label>
+					</p>
+					<p>
 						<input type="checkbox" id="news" checked>
 						<label for="news">Новости</label>
+					</p>
+					<p>
 						<input type="checkbox" id="gallery">
 						<label for="gallery">Галерея</label>
+					</p>
+					<p>
 						<input type="checkbox" id="basket">
 						<label for="basket">Корзина</label>
-					</fieldset>
-					<button class="button" type="submit">Показать</button>
-			</section>
-			<section class="results">
-				<h3 class="sort-title">Сортировать</h3>
-				<ul>
-					<li><a class="sort-price active" href="#"></a>По цене</li>
-					<li><a class="sort-type" href="#">По типу</a></li>
-					<li><a class="sort-name" href="#">По названию</a></li>
-				</ul>
-				<ul>
-					<li><a class="waning" a href="#"><span class="visually-hidden">По убыванию</span></a></li>
-					<li><a class="ascending" a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-				</ul>
-			</section>
+					</p>
+				</fieldset>
+				<button class="button" type="submit">Показать</button>
+			</form>
+			
 			<section class="catalog">
+				<header class="results">
+					<h3 class="sort-title">Сортировать</h3>
+					<ul>
+						<li><a class="sort-price active" href="#"></a>По цене</li>
+						<li><a class="sort-type" href="#">По типу</a></li>
+						<li><a class="sort-name" href="#">По названию</a></li>
+					</ul>
+					<ul>
+						<li><a class="waning" a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+						<li><a class="ascending" a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+					</ul>
+				</header>
+			<main class="catalog">
 				<h2 class="visually-hidden">Готовые шаблоны</h2>
 				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
 					</a>
 					<div class="description">
-						<h3>Sedona</h3>
+						<h3><a href="#">Sedona</a></h3>
 						<p>Информационный сайт для туристов</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
@@ -85,7 +108,7 @@
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink App">
 					</a>
 					<div class="description">
-						<h3>Pink App</h3>
+						<h3><a href="#">Pink App</a></h3>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
@@ -95,7 +118,7 @@
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
 					</a>
 					<div class="description">
-						<h3>Barbershop</h3>
+						<h3><a href="#">Barbershop</a></h3>
 						<p>Сайт салоны красоты.</br>
 						Для мужчин, да.</p>
 						<a class="button" href="#">9 900 руб.</a>
@@ -106,7 +129,7 @@
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
 					</a>
 					<div class="description">
-						<h3>Mishka</h3>
+						<h3><a href="#">Mishka</a></h3>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
@@ -116,7 +139,7 @@
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A Plus">
 					</a>
 					<div class="description">
-						<h3>A Plus</h3>
+						<h3><a href="#">A Plus</a></h3>
 						<p>Лендинг курсов повышения квалификации</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
@@ -126,20 +149,22 @@
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
 					</a>
 					<div class="description">
-						<h3>Кваст</h3>
+						<h3><a href="#">Кваст</a></h3>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				<article>
-				<ul class="pagination-list">
-					<li class="pagination-item"><a href="#">Предыдущая</a></li>
-					<li class="pagination-item pagination-item-current"><a>1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">Следующая</a></li>
-				</ul>
-			</section>
-			
+			</main>
+				<footer class="pagination">
+					<ul class="pagination-list">
+						<li class="pagination-item"><a href="#">Предыдущая</a></li>
+						<li class="pagination-item pagination-item-current"><a>1</a></li>
+						<li class="pagination-item"><a href="#">2</a></li>
+						<li class="pagination-item"><a href="#">3</a></li>
+						<li class="pagination-item"><a href="#">Следующая</a></li>
+					</ul>
+				</footer>
+			</section>	
 		</main>
 		
 		<footer class="main-footer">
@@ -154,44 +179,6 @@
 					<a class="button contacts-button" href="#">Напишите нам</a>	
 				</div>
 			</section>
-			<section class="modal modal-letter">
-				<h2 class="modal-title">Напишите нам</h2>
-				<form class="letter-form" action="" method="post">
-					<p class="info-name">
-						<label for="fullname">Представьтесь, пожалуйста:</label>
-						<input type="text" name="fullname" id="fullname" placeholder="Екатерина">
-					</p>
-					<p class="info-phone">
-						<label for="phone">Контактный телефон:</label>
-						<input type="text" name="phone" id="phone" placeholder="+7 900 666-06-06">
-					</p>
-					<p class="info-email">
-						<label for="email">Электронная почта:</label>
-						<input type="text" name="email" id="email" placeholder="client@gmail.com">
-					</p>
-					<p class="checkbox-area">
-						<label>
-							<input type="checkbox" name="subscription">
-							Я согласен получать новости и уведомления на почту
-						</label>
-					</p>
-					<p class="info-topic">
-						<label for="topic">Тема обращения:</label>
-						<select name="topic" id="topic">
-							<option value="web-sites">Веб-сайты</option>
-							<option value="annexes">Приложения</option>
-							<option value="presentations">Презентации</option>
-							<option value="other">Другое</option>
-						</select>
-					</p>
-					<p class="info-message">
-						<label for="message">Текст обращения:</label>
-						<textarea name="message" id="message"></textarea>
-					</p>
-					<button class="button" type="submit">Отправить</button>
-				</form>
-				<button class="button" type="button">Закрыть</button>
-			</section>
 			<div class="footer-social">
 				<ul>
 					<li><a class="social-button" href="#">Вконтакте</a></li>
@@ -202,6 +189,25 @@
 			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
-
+		<section class="modal modal-letter">
+				<h2 class="modal-title">Напишите нам</h2>
+				<form class="letter-form" action="" method="post">
+					<p class="info-name">
+						<label for="fullname">Ваше имя:<label>
+						<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+					</p>
+					<p class="info-email">
+						<label for="email">Ваш e-mail:</label>
+						<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+					</p>
+					<p class="info-message">
+						<label for="message">Текст письма:</label>
+						<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+					</p>
+					<button class="button" type="submit">Отправить</button>
+				</form>
+				<button class="button" type="button">Закрыть</button>
+			</section>
+	</body>
 </html>
 					
