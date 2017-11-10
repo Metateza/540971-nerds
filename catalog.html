@@ -10,9 +10,9 @@
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 				</a>
 				<ul class="site-navigation">
-					<li><a href="studio.html">Студия</a></li>
+					<li><a>Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
-					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+					<li class="site-navigation-current"><a>Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<a class="basket" href="#">Корзина</a>
@@ -23,22 +23,26 @@
 		<main class="container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-					<div class="filter-1">
-						<label for="cost">Стоимость:</label>
-						<input type="range" id="cost" name="cost" min="0" max="15000" step="500">
-						<!--не знаю как правильно разметить от 0 до 15000, чтобы они были связаны с ползунком-->
-					</div>
-					<div class="filter-2">
-						<label>Сетка:</label>
+				<form class="filters-form" action="" method="get">
+					<fieldset class="filter-cost">
+						<legend>Стоимость:</legend>
+						<!--и все равно не понимаю до конца, как сделать, поэтому сделала часть от советуемого-->
+						<label for="from">От</label>
+						<input type="text" name="from" id="from" placeholder="0">
+						<label for="before">До</label>
+						<input type="text" name="before" id="before" placeholder="15000">
+					</fieldset>
+					<fieldset class="filter-grid">
+						<legend>Сетка:</legend>
 						<input type="radio" id="adaptive" name="adaptive" checked>
 						<label for="adaptive">Адаптивная</label>
 						<input type="radio" id="fixed" name="fixed">
 						<label for="fixed">Фиксированная</label>
 						<input type="radio" id="rubber" name="rubber">
 						<label for="rubber">Резиновая</label>
-					</div>
-					<div class="filter-3">
-						<label>Особенности</label>
+					</fieldset>
+					<fieldset class="filter-3">
+						<legend>Особенности</legend>
 						<input type="checkbox" id="slider" checked>
 						<label for="slider">Слайдер</label>
 						<input type="checkbox" id="block-advantages">
@@ -49,15 +53,15 @@
 						<label for="gallery">Галерея</label>
 						<input type="checkbox" id="basket">
 						<label for="basket">Корзина</label>
-					</div>
-					<a class="show" href="#">Показать</a>
+					</fieldset>
+					<button class="button" type="submit">Показать</button>
 			</section>
 			<section class="results">
-				<h3 class="sort">Сортировать</h3>
+				<h3 class="sort-title">Сортировать</h3>
 				<ul>
-					<li><a class="price active" href="#"></a>По цене</li>
-					<li><a class="type" href="#">По типу</a></li>
-					<li><a class="name" href="#">По названию</a></li>
+					<li><a class="sort-price active" href="#"></a>По цене</li>
+					<li><a class="sort-type" href="#">По типу</a></li>
+					<li><a class="sort-name" href="#">По названию</a></li>
 				</ul>
 				<ul>
 					<li><a class="waning" a href="#"><span class="visually-hidden">По убыванию</span></a></li>
@@ -66,13 +70,7 @@
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Готовые шаблоны</h2>
-				<ul class="catalog=list">
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
 					</a>
@@ -81,13 +79,8 @@
 						<p>Информационный сайт для туристов</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				</article>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink App">
 					</a>
@@ -96,13 +89,8 @@
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				</article>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
 					</a>
@@ -112,13 +100,8 @@
 						Для мужчин, да.</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				</article>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
 					</a>
@@ -127,13 +110,8 @@
 						<p>Интернет-магазин вязаных игрушек</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				</article>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A Plus">
 					</a>
@@ -142,13 +120,8 @@
 						<p>Лендинг курсов повышения квалификации</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-					<li class="catalog-item">
-					<div class="radio-item">
-						<input type="radio" checked>
-						<input type="radio">
-						<input type="radio">
-					</div>
+				</article>
+				<article class="catalog-item">
 					<a href="catalog-item.html">
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
 					</a>
@@ -157,8 +130,7 @@
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-					</li>
-				</ul>
+				<article>
 				<ul class="pagination-list">
 					<li class="pagination-item"><a href="#">Предыдущая</a></li>
 					<li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -169,17 +141,56 @@
 			</section>
 			
 		</main>
+		
 		<footer class="main-footer">
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<!--Здесь должна быть карта-->
+				<img src="img/map.jpg" width="1440" height="785" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<div class="footer-contacts">
 					<h3>Nёrds design studio</h3>
-					<p>191186, Санкт-Петербург,</br>
-					ул. Б. Конюшенная, д. 19/8
-					Телефон. +7 (812) 275-75-75</p>
+					<p>191186, Санкт-Петербург,
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p>Телефон. +7 (812) 275-75-75</p>
 					<a class="button contacts-button" href="#">Напишите нам</a>	
 				</div>
+			</section>
+			<section class="modal modal-letter">
+				<h2 class="modal-title">Напишите нам</h2>
+				<form class="letter-form" action="" method="post">
+					<p class="info-name">
+						<label for="fullname">Представьтесь, пожалуйста:</label>
+						<input type="text" name="fullname" id="fullname" placeholder="Екатерина">
+					</p>
+					<p class="info-phone">
+						<label for="phone">Контактный телефон:</label>
+						<input type="text" name="phone" id="phone" placeholder="+7 900 666-06-06">
+					</p>
+					<p class="info-email">
+						<label for="email">Электронная почта:</label>
+						<input type="text" name="email" id="email" placeholder="client@gmail.com">
+					</p>
+					<p class="checkbox-area">
+						<label>
+							<input type="checkbox" name="subscription">
+							Я согласен получать новости и уведомления на почту
+						</label>
+					</p>
+					<p class="info-topic">
+						<label for="topic">Тема обращения:</label>
+						<select name="topic" id="topic">
+							<option value="web-sites">Веб-сайты</option>
+							<option value="annexes">Приложения</option>
+							<option value="presentations">Презентации</option>
+							<option value="other">Другое</option>
+						</select>
+					</p>
+					<p class="info-message">
+						<label for="message">Текст обращения:</label>
+						<textarea name="message" id="message"></textarea>
+					</p>
+					<button class="button" type="submit">Отправить</button>
+				</form>
+				<button class="button" type="button">Закрыть</button>
 			</section>
 			<div class="footer-social">
 				<ul>
@@ -188,8 +199,9 @@
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 				</ul>
 			</div>
-			<p><b>Давайте дружить, это выгодно!</b></p>
+			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
+
 </html>
 					
