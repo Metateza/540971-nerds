@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
+  <body>
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 				</a>
 				<ul class="site-navigation">
-					<li><a href="studio.html">Студия</a></li>
+					<li><a>Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
 					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
@@ -21,14 +22,18 @@
 			<section class="top-slider">
 			<h1 class="visually-hidden">Нёрдс</h1>
 				<div class="slider-indicator">
-                <input type="radio" id="btn-1" name="toggle" checked>
-                <input type="radio" id="btn-2" name="toggle">
-                <input type="radio" id="btn-3" name="toggle">
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-                </div>
+				<p>
+					<label for="btn-1"></label>
+					<input type="radio" id="btn-1" name="toggle" checked>
+				</p>
+				<p>
+					<label for="btn-2"></label>
+					<input type="radio" id="btn-2" name="toggle">
+				</p>
+				<p>
+					<label for="btn-3"></label>
+					<input type="radio" id="btn-3" name="toggle">
+				</p>	
 				<div class="slider-1">
 					<b>Долго, дорого, скрупулезно.</b>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -52,33 +57,17 @@
 				<h2 class="visually-hidden">Проекты</h2>
 				<ul class="projects-list">
 					<li class="projects-item">
-						<p class="projects-item-image">
-							<a href="projects-item.html">
-								<img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
-							</a>
-						</p>
-						<h3>
-							<a href="projects-item.html">
-							Веб-сайты
-							</a>
-						</h3>
-						<p>Мир никогда не будет прежним</br>
+						<img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+						<h3>Веб-сайты</h3>
+						<p>Мир никогда не будет прежним 
 						после того как увидит ваш сайт!
 						</p>
 						<a class="button" href="#">Заказать</a>
 					</li>
 					
 					<li class="projects-item">
-						<p class="projects-item-image">
-							<a href="projects-item.html">
-								<img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-							</a>
-						</p>
-						<h3>
-							<a href="projects-item.html">
-							Приложения
-							</a>
-						</h3>
+						<img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+						<h3>Приложения</h3>
 						<p>Покорите топ-10 приложений в</br>
 						AppStore и Google Play
 						</p>
@@ -86,16 +75,8 @@
 					</li>
 					
 					<li class="projects-item">
-						<p class="projects-item-image">
-							<a href="projects-item.html">
 								<img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-							</a>
-						</p>
-						<h3>
-							<a href="projects-item.html">
-							Презентации
-							</a>
-						</h3>
+						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете,</br>
 						насколько вы изумительны!
 						</p>
@@ -129,7 +110,7 @@
 					</tr>
 				</table>
 				<ul class="logo">
-					<li><a class="logo" href="#"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy"></a></li>
+					<li><a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy"></a></li>
 					<li><a class="logo" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип Barbershop Borodinski"></a></li>
 					<li><a class="logo" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип Pink"></a></li>
 					<li><a class="logo" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип Mishka"></a></li>
@@ -149,44 +130,6 @@
 					<a class="button contacts-button" href="#">Напишите нам</a>	
 				</div>
 			</section>
-			<section class="modal modal-letter">
-				<h2 class="modal-title">Напишите нам</h2>
-				<form class="letter-form" action="" method="post">
-					<p class="info-name">
-						<label for="fullname">Представьтесь, пожалуйста:</label>
-						<input type="text" name="fullname" id="fullname" placeholder="Екатерина">
-					</p>
-					<p class="info-phone">
-						<label for="phone">Контактный телефон:</label>
-						<input type="text" name="phone" id="phone" placeholder="+7 900 666-06-06">
-					</p>
-					<p class="info-email">
-						<label for="email">Электронная почта:</label>
-						<input type="text" name="email" id="email" placeholder="client@gmail.com">
-					</p>
-					<p class="checkbox-area">
-						<label>
-							<input type="checkbox" name="subscription">
-							Я согласен получать новости и уведомления на почту
-						</label>
-					</p>
-					<p class="info-topic">
-						<label for="topic">Тема обращения:</label>
-						<select name="topic" id="topic">
-							<option value="web-sites">Веб-сайты</option>
-							<option value="annexes">Приложения</option>
-							<option value="presentations">Презентации</option>
-							<option value="other">Другое</option>
-						</select>
-					</p>
-					<p class="info-message">
-						<label for="message">Текст обращения:</label>
-						<textarea name="message" id="message"></textarea>
-					</p>
-					<button class="button" type="submit">Отправить</button>
-				</form>
-				<button class="button" type="button">Закрыть</button>
-			</section>
 			<div class="footer-social">
 				<ul>
 					<li><a class="social-button" href="#">Вконтакте</a></li>
@@ -197,5 +140,25 @@
 			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
+		<section class="modal modal-letter">
+			<h2 class="modal-title">Напишите нам</h2>
+			<form class="letter-form" method="post">
+				<p class="info-name">
+					<label for="fullname">Ваше имя:<label>
+					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p class="info-email">
+					<label for="email">Ваш e-mail:</label>
+					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+				</p>
+				<p class="info-message">
+					<label for="message">Текст письма:</label>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+				</p>
+				<button class="button" type="submit">Отправить</button>
+			</form>
+			<button class="button" type="button">Закрыть</button>
+		</section>
+	</body>
 </html>
 						
