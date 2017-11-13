@@ -11,7 +11,7 @@
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 				</a>
 				<ul class="site-navigation">
-					<li><a>Студия</a></li>
+					<li><a href="index.html">Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
 					<li class="site-navigation-current"><a>Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
@@ -25,16 +25,19 @@
 			<form class="filters-form" method="get">
 				<fieldset class="filter-cost">
 					<legend>Стоимость:</legend>
-					<div class="filter-button"></div>
-					<div class="slider-fill"></div>
-					<div class="slider"></div>
+					<div class="range">
+						<div class="filter-button-from"></div>
+						<div class="filter-button-to></div>
+						<div class="slider-fill"></div>
+						<div class="slider"></div>
+					</div>
 					<p>
-						<label for="from">От</label>
-						<input type="text" name="from" id="from" placeholder="0">
+						<label for="date-from">От</label>
+						<input type="text" name="date-from" id="date-from" placeholder="0">
 					</p>
 					<p>
-						<label for="before">До</label>
-						<input type="text" name="before" id="before" placeholder="15000">
+						<label for="date-to">До</label>
+						<input type="text" name="date-to" id="date-to" placeholder="15000">
 					</p>
 				</fieldset>
 				<fieldset class="filter-grid">
@@ -52,7 +55,7 @@
 						<label for="rubber">Резиновая</label>
 					</p>
 				</fieldset>
-				<fieldset class="filter-3">
+				<fieldset class="filter-feature">
 					<legend>Особенности</legend>
 					<p>
 						<input type="checkbox" id="slider" checked>
@@ -91,65 +94,53 @@
 						<li><a class="ascending" a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
 					</ul>
 				</header>
-			<main class="catalog">
+			<main class="templates">
 				<h2 class="visually-hidden">Готовые шаблоны</h2>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
-					</a>
 					<div class="description">
-						<h3><a href="#">Sedona</a></h3>
+						<a href="#"><h3>Sedona</h3></a>
 						<p>Информационный сайт для туристов</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink App">
-					</a>
 					<div class="description">
-						<h3><a href="#">Pink App</a></h3>
+						<a href="#"><h3>Pink App</h3></a>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
-					</a>
 					<div class="description">
-						<h3><a href="#">Barbershop</a></h3>
+						<a href="#"><h3>Barbershop</h3></a>
 						<p>Сайт салоны красоты.</br>
 						Для мужчин, да.</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
-					</a>
 					<div class="description">
-						<h3><a href="#">Mishka</a></h3>
+						<a href="#"><h3>Mishka</h3></a>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A Plus">
-					</a>
 					<div class="description">
-						<h3><a href="#">A Plus</a></h3>
+						<a href="#"><h3>A Plus</h3></a>
 						<p>Лендинг курсов повышения квалификации</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
 				<article class="catalog-item">
-					<a href="catalog-item.html">
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
-					</a>
 					<div class="description">
-						<h3><a href="#">Кваст</a></h3>
+						<a href="#"><h3>Кваст</h3></a>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
@@ -179,8 +170,7 @@
 					<a class="button contacts-button" href="#">Напишите нам</a>	
 				</div>
 			</section>
-			<div class="footer-social">
-				<ul>
+				<ul class="footer-social">
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
@@ -198,7 +188,7 @@
 					</p>
 					<p class="info-email">
 						<label for="email">Ваш e-mail:</label>
-						<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+						<input type="email" name="email" id="email" placeholder="Для отправки ответа">
 					</p>
 					<p class="info-message">
 						<label for="message">Текст письма:</label>
