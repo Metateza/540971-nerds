@@ -27,9 +27,9 @@
 					<legend>Стоимость:</legend>
 					<div class="range">
 						<div class="filter-button-from"></div>
-						<div class="filter-button-to></div>
-						<div class="slider-fill"></div>
-						<div class="slider"></div>
+						<div class="filter-button-to"></div>
+						<div class="line-fill"></div>
+						<div class="line"></div>
 					</div>
 					<p>
 						<label for="date-from">От</label>
@@ -90,14 +90,14 @@
 						<li><a class="sort-name" href="#">По названию</a></li>
 					</ul>
 					<ul>
-						<li><a class="waning" a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+						<li><a class="decrease active" a href="#"><span class="visually-hidden">По убыванию</span></a></li>
 						<li><a class="ascending" a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
 					</ul>
 				</header>
 			<main class="templates">
 				<h2 class="visually-hidden">Готовые шаблоны</h2>
 				<article class="catalog-item">
-						<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
+					<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
 					<div class="description">
 						<a href="#"><h3>Sedona</h3></a>
 						<p>Информационный сайт для туристов</p>
@@ -105,7 +105,7 @@
 					</div>
 				</article>
 				<article class="catalog-item">
-						<img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink App">
+					<img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink App">
 					<div class="description">
 						<a href="#"><h3>Pink App</h3></a>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -113,7 +113,7 @@
 					</div>
 				</article>
 				<article class="catalog-item">
-						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
+					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
 					<div class="description">
 						<a href="#"><h3>Barbershop</h3></a>
 						<p>Сайт салоны красоты.</br>
@@ -122,7 +122,7 @@
 					</div>
 				</article>
 				<article class="catalog-item">
-						<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
+					<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
 					<div class="description">
 						<a href="#"><h3>Mishka</h3></a>
 						<p>Интернет-магазин вязаных игрушек</p>
@@ -130,7 +130,7 @@
 					</div>
 				</article>
 				<article class="catalog-item">
-						<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A Plus">
+					<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A Plus">
 					<div class="description">
 						<a href="#"><h3>A Plus</h3></a>
 						<p>Лендинг курсов повышения квалификации</p>
@@ -138,7 +138,7 @@
 					</div>
 				</article>
 				<article class="catalog-item">
-						<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
+					<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
 					<div class="description">
 						<a href="#"><h3>Кваст</h3></a>
 						<p>Промо-сайт производителя крафтового кваса</p>
@@ -161,7 +161,7 @@
 		<footer class="main-footer">
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<img src="img/map.jpg" width="1440" height="785" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				<img src="img/map.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<div class="footer-contacts">
 					<h3>Nёrds design studio</h3>
 					<p>191186, Санкт-Петербург,
@@ -175,29 +175,28 @@
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 				</ul>
-			</div>
-			<b>Давайте дружить, это выгодно!</b>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
 		<section class="modal modal-letter">
-				<h2 class="modal-title">Напишите нам</h2>
-				<form class="letter-form" action="" method="post">
-					<p class="info-name">
-						<label for="fullname">Ваше имя:<label>
-						<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
-					</p>
-					<p class="info-email">
-						<label for="email">Ваш e-mail:</label>
-						<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-					</p>
-					<p class="info-message">
-						<label for="message">Текст письма:</label>
-						<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-					</p>
-					<button class="button" type="submit">Отправить</button>
-				</form>
-				<button class="button" type="button">Закрыть</button>
-			</section>
+			<h2 class="modal-title">Напишите нам</h2>
+			<form class="letter-form" action="" method="post">
+				<p class="info-name">
+					<label for="fullname">Ваше имя:<label>
+					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p class="info-email">
+					<label for="email">Ваш e-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+				</p>
+				<p class="info-message">
+					<label for="message">Текст письма:</label>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+				</p>
+				<button class="button" type="submit">Отправить</button>
+			</form>
+			<button class="button" type="button">Закрыть</button>
+		</section>
 	</body>
 </html>
 					
