@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 		<header class="main-header">
@@ -43,42 +45,42 @@
 				<fieldset class="filter-grid">
 					<legend>Сетка:</legend>
 					<p>
-						<input type="radio" id="adaptive" name="adaptive" checked>
+						<input class="filter-input" type="radio" id="adaptive" name="adaptive" checked>
 						<label for="adaptive">Адаптивная</label>
 					</p>
 					<p>
-						<input type="radio" id="fixed" name="fixed">
+						<input class="filter-input" type="radio" id="fixed" name="fixed">
 						<label for="fixed">Фиксированная</label>
 					</p>
 					<p>
-						<input type="radio" id="rubber" name="rubber">
+						<input class="filter-input" type="radio" id="rubber" name="rubber" disabled>
 						<label for="rubber">Резиновая</label>
 					</p>
 				</fieldset>
 				<fieldset class="filter-feature">
 					<legend>Особенности</legend>
 					<p>
-						<input type="checkbox" id="slider" checked>
+						<input class="filter-input" type="checkbox" id="slider" checked>
 						<label for="slider">Слайдер</label>
 					</p>
 					<p>
-						<input type="checkbox" id="block-advantages">
+						<input class="filter-input" type="checkbox" id="block-advantages">
 						<label for="block-advantages">Блок преимуществ</label>
 					</p>
 					<p>
-						<input type="checkbox" id="news" checked>
+						<input class="filter-input" type="checkbox" id="news" checked>
 						<label for="news">Новости</label>
 					</p>
 					<p>
-						<input type="checkbox" id="gallery">
+						<input class="filter-input" type="checkbox" id="gallery">
 						<label for="gallery">Галерея</label>
 					</p>
 					<p>
-						<input type="checkbox" id="basket">
+						<input class="filter-input" type="checkbox" id="basket">
 						<label for="basket">Корзина</label>
 					</p>
 				</fieldset>
-				<button class="button" type="submit">Показать</button>
+				<button class="button button-show" type="submit">Показать</button>
 			</form>
 			
 			<section class="catalog">
@@ -116,8 +118,7 @@
 					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
 					<div class="description">
 						<a href="#"><h3>Barbershop</h3></a>
-						<p>Сайт салоны красоты.</br>
-						Для мужчин, да.</p>
+						<p>Сайт салоны красоты. Для мужчин, да.</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
 				</article>
@@ -144,7 +145,7 @@
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<a class="button" href="#">9 900 руб.</a>
 					</div>
-				<article>
+				</article>
 			</div>
 				<footer class="pagination">
 					<ul class="pagination-list">
@@ -195,7 +196,7 @@
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<button class="button button-close" type="button">Закрыть</button>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
