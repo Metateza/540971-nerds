@@ -44,6 +44,14 @@ a {
 	text-decoration: none;
 }
 
+.main-header-logo:hover {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
 .button {
 	font: inherit;
 	line-height: 18px;
