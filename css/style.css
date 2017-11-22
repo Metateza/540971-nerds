@@ -1,23 +1,23 @@
 @font-face {
     font-family: "Roboto";
-    src: url("roboto-regular.woff2") format("woff2"),
-         url("roboto-regular.woff") format("woff");
+    src: url("../fonts/roboto-regular.woff2") format("woff2"),
+         url("../fonts/roboto-regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 	
 @font-face {
     font-family: "Roboto";
-    src: url("roboto-medium.woff2") format("woff2"),
-         url("roboto-medium.woff") format("woff");
+    src: url("../fonts/roboto-medium.woff2") format("woff2"),
+         url("../fonts/roboto-medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("roboto-bold.woff2") format("woff2"),
-         url("roboto-bold.woff") format("woff");
+    src: url("../fonts/roboto-bold.woff2") format("woff2"),
+         url("../fonts/roboto-bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -29,10 +29,16 @@ body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #000000;
 	
 	background-color: #ffffff;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .main-header {
@@ -40,7 +46,7 @@ body {
 }
 
 a {
-	font-weight: bold;
+	font-weight: 700;
 	text-decoration: none;
 }
 
@@ -59,7 +65,7 @@ a {
 .button {
 	font: inherit;
 	line-height: 18px;
-	font-weight: middle;
+	font-weight: 500;
 	
 	text-align: center;
 	color: #ffffff;
@@ -113,11 +119,20 @@ a {
 }
 
 .main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 5px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 
 .site-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 450px;
 	list-style: none;
 }
 
@@ -168,6 +183,9 @@ a {
 }
 
 .projects-list {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
 	list-style: none;
 }
 
@@ -191,14 +209,14 @@ a {
 }
 
 .studio caption {
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .studio th {
 	font-size: 45px;
-	line-height: 10,06px;
-	font-weight: bold;
+	line-height: 10.06px;
+	font-weight: 700;
 	vertical-align: middle;
 }
 
@@ -207,6 +225,11 @@ a {
 }
 
 .logos {
+	display: flex;
+	flex-decoration: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
 	list-style: none;
 }
 
@@ -222,6 +245,11 @@ a {
 	opacity: 0.1;
 }
 
+.filters-form {
+	display: flex;
+	flex-direction: column;
+}
+
 .filters-form fieldset{
 	border: none;
 }
@@ -229,7 +257,7 @@ a {
 .filters-form legend {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -276,6 +304,16 @@ a {
 	
 	background-color: #d5d5d5;
 }
+
+.inner-page {
+	display: flex;
+	
+}
+	
+.results {
+	display: flex;
+}
+
 .results h3 {
 	font-size: 18px;
 	line-height: 18px;
@@ -305,6 +343,26 @@ a {
 	color: #000000;
 }
 
+.sort-list {
+	display: flex;
+	justify-content: space-between;
+	width: 280px;
+}
+
+.decrease-ascending {
+	display: flex;
+	justify-content: space-between;
+	width: 60px;
+}
+
+.templates {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	width: 760px;
+}
+
 .description {
 	background-color: #eeeeee;
 }
@@ -312,7 +370,7 @@ a {
 .description h3 {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	
 	color: #000000;
 	text-transform: uppercase;
@@ -324,12 +382,16 @@ a {
 }
 
 .pagination-list {
+	display: flex;
+	justify-content: space-between;
+	width: 450px;
+	margin-right: 5px;
 	list-style: none;
 }
 
 .pagination-item a {
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	
 	color: #000000;
 	background-color: #eeeeee;
@@ -367,7 +429,7 @@ a {
 .footer-contacts h3 {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -417,7 +479,7 @@ a {
 
 .letter-form p {
 	line-height: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .letter-form input[type="text"],
@@ -425,7 +487,7 @@ a {
 .letter-form textarea {
 	font: inherit;
 	line-height: 18px;
-	font-weight: normal;
+	font-weight: 400;
 	
 	color: #444444;
 	opacity: 0.5;
@@ -446,7 +508,8 @@ a {
 }
 
 .letter-form input[type="text"]:invalid,
-.letter-form input[type="email"]:invalid {
+.letter-form input[type="email"]:invalid,
+.letter-form textarea:invalid {
 	border: 2px solid #e74246;
 }
 
