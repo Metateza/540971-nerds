@@ -341,6 +341,7 @@ a {
 
 .results a:active {
 	color: #000000;
+	opacity: 1;
 }
 
 .sort-list {
