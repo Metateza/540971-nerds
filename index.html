@@ -25,8 +25,16 @@
 				<h1 class="visually-hidden">Нёрдс</h1>
 				
 				<section class="top-slider">
-				<h2 class="visually-hidden">Индивидуальные качества студии Нёрдс</h2>
-					<div class="slider slider-1 slider-active">
+					<h2 class="visually-hidden">Индивидуальные качества студии Нёрдс</h2>
+					<input type="radio" id="btn-1" class="slide-control" name="toggle" checked>
+					<input type="radio" id="btn-2" class="slide-control" name="toggle">
+					<input type="radio" id="btn-3" class="slide-control" name="toggle">
+					<div class="slider-indicator">
+						<label for="btn-1">Slide 1</label>
+						<label for="btn-2">Slide 2</label>
+						<label for="btn-3">Slide 3</label>
+					</div>
+					<div class="slider slider-1">
 						<b>Долго, дорого, скрупулезно.</b>
 						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
 						<a class="button button-discover" href="#">Узнать больше</a>
@@ -40,20 +48,6 @@
 						<b>Только ночь, только хардкор</b>
 						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 						<a class="button button-discover" href="#">Узнать больше</a>
-					</div>
-					<div class="slider-indicator">
-					<p>
-						<label for="btn-1"></label>
-						<input type="radio" id="btn-1" name="toggle" checked>
-					</p>
-					<p>
-						<label for="btn-2"></label>
-						<input type="radio" id="btn-2" name="toggle">
-					</p>
-					<p>
-						<label for="btn-3"></label>
-						<input type="radio" id="btn-3" name="toggle">
-					</p>
 					</div>
 				</section>
 			</div>
@@ -118,10 +112,26 @@
 					</table>
 				</div>
 				<ul class="logos">
-					<li><a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="260" height="180" alt="Логотип HTML Academy"></a></li>
-					<li><a class="logo" href="#"><img src="img/logo-2.png" width="260" height="180" alt="Логотип Barbershop Borodinski"></a></li>
-					<li><a class="logo" href="#"><img src="img/logo-3.png" width="260" height="180" alt="Логотип Pink"></a></li>
-					<li><a class="logo" href="#"><img src="img/logo-4.png" width="260" height="180" alt="Логотип Mishka"></a></li>
+					<li class="logos-item">
+						<a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
+							<img src="img/logo-1.png" width="260" height="180" alt="Логотип HTML Academy">
+						</a>
+					</li class="logos-item">
+					<li>
+						<a class="logo" href="#">
+						<img src="img/logo-2.png" width="260" height="180" alt="Логотип Barbershop Borodinski">
+						</a>
+					</li class="logos-item">
+					<li>
+						<a class="logo" href="#">
+							<img src="img/logo-3.png" width="260" height="180" alt="Логотип Pink">
+						</a>
+					</li>
+					<li class="logos-item">
+						<a class="logo" href="#">
+							<img src="img/logo-4.png" width="260" height="180" alt="Логотип Mishka">
+						</a>
+					</li>
 				</ul>
 			</section>
 		</main>
@@ -129,12 +139,12 @@
 		<footer class="main-footer">
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<img src="img/map.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				<iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0f7ece82fbf90cd0dccb2aff1b66b3bf8017ade7876bf40e6bb655071843367&amp;source=constructor"></iframe>
 				<div class="footer-contacts">
 					<h3>Nёrds design studio</h3>
-					<p>191186, Санкт-Петербург,
+					<p class="address">191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
 					<a class="button button-contacts" href="#">Напишите нам</a>	
 				</div>
 				<div class="map-marker"></div>
@@ -196,21 +206,23 @@
 		<section class="modal modal-letter">
 			<h2 class="modal-title">Напишите нам</h2>
 			<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="info-name">
-					<label for="fullname">Ваше имя:</label>
-					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
-				</p>
-				<p class="info-email">
-					<label for="email">Ваш e-mail:</label>
-					<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
-				</p>
+				<div class="info-column">
+					<p class="info-name">
+						<label for="fullname">Ваше имя:</label>
+						<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+					</p>
+					<p class="info-email">
+						<label for="email">Ваш e-mail:</label>
+						<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+					</p>
+				</div>
 				<p class="info-message">
 					<label for="message">Текст письма:</label>
 					<textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+			<button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
 	</body>
 </html>

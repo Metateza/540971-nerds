@@ -35,14 +35,16 @@
 						<div class="range-line-fill"></div>
 						<div class="range-line"></div>
 					</div>
-					<p>
-						<label for="date-from">От</label>
-						<input type="text" name="date-from" id="date-from" value="0">
-					</p>
-					<p>
-						<label for="date-to">До</label>
-						<input type="text" name="date-to" id="date-to" value="15000">
-					</p>
+					<div class="filter-cost-items">
+						<p>
+							<label for="date-from">От</label>
+							<input type="text" name="date-from" id="date-from" value="0">
+						</p>
+						<p>
+							<label for="date-to">До</label>
+							<input type="text" name="date-to" id="date-to" value="15000">
+						</p>
+					</div>
 				</fieldset>
 				<fieldset class="filter-grid">
 					<legend>Сетка:</legend>
@@ -154,21 +156,21 @@
 						<li class="pagination-item pagination-item-current"><a>1</a></li>
 						<li class="pagination-item"><a href="#">2</a></li>
 						<li class="pagination-item"><a href="#">3</a></li>
-						<li class="pagination-item"><a href="#">Следующая</a></li>
+						<li class="pagination-item next"><a href="#">Следующая</a></li>
 					</ul>
 				</footer>
 			</section>	
 		</main>
 		
-		<footer class="main-footer container">
+		<footer class="main-footer">
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<img src="img/map.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				<iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0f7ece82fbf90cd0dccb2aff1b66b3bf8017ade7876bf40e6bb655071843367&amp;source=constructor"></iframe>
 				<div class="footer-contacts">
 					<h3>Nёrds design studio</h3>
-					<p>191186, Санкт-Петербург,
+					<p class="address">191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
 					<a class="button button-contacts" href="#">Напишите нам</a>	
 				</div>
 				<div class="map-marker"></div>
@@ -230,21 +232,23 @@
 		<section class="modal modal-letter">
 			<h2 class="modal-title">Напишите нам</h2>
 			<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="info-name">
-					<label for="fullname">Ваше имя:</label>
-					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
-				</p>
-				<p class="info-email">
-					<label for="email">Ваш e-mail:</label>
-					<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
-				</p>
+				<div class="info-column">
+					<p class="info-name">
+						<label for="fullname">Ваше имя:</label>
+						<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+					</p>
+					<p class="info-email">
+						<label for="email">Ваш e-mail:</label>
+						<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+					</p>
+				</div>
 				<p class="info-message">
 					<label for="message">Текст письма:</label>
 					<textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+			<button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
 	</body>
 </html>
