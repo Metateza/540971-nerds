@@ -166,6 +166,7 @@
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0f7ece82fbf90cd0dccb2aff1b66b3bf8017ade7876bf40e6bb655071843367&amp;source=constructor"></iframe>
+				<img src="img/map.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<div class="footer-contacts">
 					<h3>Nёrds design studio</h3>
 					<p class="address">191186, Санкт-Петербург,
@@ -233,23 +234,26 @@
 			<h2 class="modal-title">Напишите нам</h2>
 			<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="info-column">
-					<p class="info-name">
-						<label for="fullname">Ваше имя:</label>
-						<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
+					<p class="info-login">
+						<label for="login">Ваше имя:</label>
+						<input type="text" name="login" id="login" placeholder="Представьтесь, пожалуйста">
 					</p>
 					<p class="info-email">
 						<label for="email">Ваш e-mail:</label>
-						<input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+						<input type="email" name="email" id="email" placeholder="Для отправки ответа">
 					</p>
 				</div>
 				<p class="info-message">
 					<label for="message">Текст письма:</label>
-					<textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
-			<button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+			<button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</section>
+		
+		<script src="js/popup.js">
+		</script>
 	</body>
 </html>
 					
