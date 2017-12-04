@@ -144,6 +144,7 @@ a {
 .basket {
 	width: 100px;
 	
+	font-weight: 400;
 	color: #000000;
 }
 
@@ -187,7 +188,7 @@ a {
 .slider b {
 	font-size: 55px;
 	line-height: 55px;
-	font-height: 500;
+	font-weight: 500;
 }
 
 .top-slider {
@@ -382,11 +383,14 @@ a {
 .studio b {
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 500;
 }
 
 .studio h3 {
-	padding-top: 19px;
-
+	padding-top: 23px;
+	
+	font-size: 16px;
+	line-height: 24px;
 	text-transform: uppercase;
 }
 
@@ -577,7 +581,7 @@ a {
 .range-line {
 	position: absolute;
 	z-index: 1;
-	top: 50%;nlin
+	top: 50%;
 	transform: translateY(-50%);
 	left: 24.5px;
 	right: 21px;
@@ -640,7 +644,7 @@ a {
 }
 
 .filter-input[type="checkbox"] + label::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -650,7 +654,7 @@ a {
 }
 
 .filter-input[type="checkbox"]:checked + label::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -661,7 +665,7 @@ a {
 
 
 .filter-input[type="radio"] + label::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -673,7 +677,7 @@ a {
 }
 
 .filter-input[type="radio"]:checked + label::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -685,10 +689,10 @@ a {
 }
 
 .filter-input[type="radio"]:checked + label::after {
-	content: '';
+	content: "";
 	position: absolute;
-  top: 8.4px;
-  left: 8.2px;
+	top: 8.7px;
+	left: 8.2px;
 	margin-right: 10px;
 	width: 9px;
 	height: 9px;
@@ -735,7 +739,6 @@ a {
 
 .results {
 	display: flex;
-	margin-right: 8px;
 	margin-bottom: 10px;
 	list-style: none;
 }
@@ -743,7 +746,7 @@ a {
 .results h3 {
 	font-size: 18px;
 	line-height: 18px;
-	margin-right: 230px;
+	margin-right: 220px;
 	
 	text-transform: uppercase;
 }
@@ -778,7 +781,7 @@ a {
 .sort-list {
 	display: flex;
 	justify-content: space-between;
-	width: 280px;
+	width: 270px;
 }
 
 .decrease-ascending {
@@ -786,6 +789,10 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.decrease-ascending li {
+margin-left: 15px;
 }
 
 .decrease-ascending .ascending,
@@ -959,6 +966,11 @@ a {
 	min-height: 420px;
 }
 
+.modal-map img {
+	display: block;
+	margin: auto;
+}
+
 .interactive-map {
 	position: absolute;
 	top: 0;
@@ -975,14 +987,14 @@ a {
 
 .footer-contacts {
 	position: absolute;
-	left: 20px;
-	bottom: 54px;
+	bottom: 60px;
+	left: calc((100% - 1160px)/2);
 	
 	display: flex;
 	flex-direction: column;
 	width: 320px;
 	height: 308px;
-
+	
 	background-color: #ffffff;
 }
 
@@ -1003,12 +1015,15 @@ a {
 	padding-left: 52px;
 	
 	line-height: 18px;
+	color: #666666;
 }
 
 .footer-contacts .phone {
 	margin: 0;
 	margin-top: 15px;
 	padding-left: 52px;
+	
+	color: #666666;
 }
 
 .button-contacts {
@@ -1035,7 +1050,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 260px;
-	padding-top: 53px;
+	padding-top: 49px;
 	padding-left: 0;
 	
 	text-align: center;
@@ -1072,7 +1087,7 @@ a {
 	flex-direction: column;
 	width: 560px;
 	margin-left: 140px;
-	margin-top: 74px;
+	margin-top: 68px;
 }
 
 .main-footer b {
@@ -1083,6 +1098,7 @@ a {
 .main-footer p {
 	margin: 0;
 	margin-top: 12px;
+	color: #444444;
 }
 
 .discount {
