@@ -518,8 +518,6 @@ a {
 }
 
 .filters-form p {
-	line-height: 20px;
-	
 	color: #283136;
 }
 
@@ -629,6 +627,7 @@ a {
 .filter-input:hover + label,
 .filter-input:focus + label {
 	color: #000000;
+	outline: none;
 }
 
 .filter-input:disabled + label {
@@ -695,7 +694,7 @@ a {
 .filter-input[type="radio"]:checked + label::after {
 	content: "";
 	position: absolute;
-	top: 8.7px;
+	top: 7.6px;
 	left: 8.2px;
 	margin-right: 10px;
 	width: 9px;
@@ -800,7 +799,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 265px;
-	font: weight: 400;
+	font-weight: 400;
 }
 
 .decrease-ascending {
@@ -1006,6 +1005,11 @@ margin-left: 15px;
 	border: none;
 }
 
+.interactive-map-container {
+	width: 100%;
+	height: 100%;
+}
+
 .footer-column {
 	display: flex;
 	padding-bottom: 50px;
@@ -1172,6 +1176,7 @@ margin-left: 15px;
   	margin-left: -455px;
   	bottom: 0;
   	margin-bottom: 125px;
+	z-index: 3;
 
 	display: none;
 	width: 960px;
@@ -1253,6 +1258,7 @@ margin-left: 15px;
 .letter-form input[type="email"]:focus,
 .letter-form textarea:focus {
 	border: 2px solid #000000;
+	outline: none;
 }
 
 .letter-form input[type="text"]:invalid,
@@ -1287,6 +1293,22 @@ margin-left: 15px;
 	
 	background-color: #fb565a;
 	opacity: 0.3;
+}
+
+.button.button-close {
+	cursor: pointer;
+	padding: 0;
+	font-size: 0;
+}
+
+.button.button-close:active {
+	background: none;
+	box-shadow: none;
+	opacity: 1;
+}
+
+.button.button-close:hover {
+	background: none;
 }
 
 .button-close::before {
