@@ -850,10 +850,19 @@ a {
 	background-color: #4d4d4d;
 }
 
+.filter-input:disabled + label {
+	color: rgba(40, 49, 54, .1);
+	opacity: 1;
+}
+
+.filter-input:disabled + label::before {
+	background-color: #ffffff;
+	opacity: 1;
+}
+
 .filter-input[type="radio"]:disabled + label::before,
 .filter-input[type="checkbox"]:disabled + label::before{
 	opacity: 0.1;
-	background-color: #4d4d4d;
 }
 
 .filter-input[type="radio"]:disabled + label::after {
@@ -1015,6 +1024,14 @@ a {
 
 .decrease.active {
 	border-top: 10px solid #010101;
+}
+
+.ascending:active {
+border-bottom: 10px solid #010101;
+}
+
+.decrease:active {
+border-top: 10px solid #010101;
 }
 
 .templates {
@@ -1334,7 +1351,7 @@ a {
 
 .social-button:active {
 	color: #ffffff;
-	opacity: 0.3;
+	opacity: 1;
 	
 	background-color: #d7373b;
 }
