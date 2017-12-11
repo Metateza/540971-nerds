@@ -50,29 +50,28 @@ window.addEventListener("keydown", function (evt) {
 
 var map = document.getElementById('map');
 if (map) {
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(function () {
-var myMap = new ymaps.Map('map', {
-center: [59.938631, 30.323055],
-zoom: 18
-});
-myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-hintContent: 'NЁRDS DESIGN STUDIO ул. Большая Конюшенная 19/8, Санкт-Петербург',
-balloonContent: 'NЁRDS DESIGN STUDIO'
-}, {
-// Опции.
-// Необходимо указать данный тип макета.
-iconLayout: 'default#image',
-// Своё изображение иконки метки.
-iconImageHref: 'img/map-marker.png',
-// Размеры метки.
-iconImageSize: [367, 190],
-// Смещение левого верхнего угла иконки относительно
-// её "ножки" (точки привязки).
-iconImageOffset: [-183, -190]
-});
-
-myMap.geoObjects
-.add(myPlacemark);
-})
+	// Дождёмся загрузки API и готовности DOM.
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('map', {
+			center: [59.938631, 30.323055],
+			zoom: 18
+		});
+		myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			hintContent: 'NЁRDS DESIGN STUDIO ул. Большая Конюшенная 19/8, Санкт-Петербург',
+			balloonContent: 'NЁRDS DESIGN STUDIO'
+		}, {
+			// Опции.
+			// Необходимо указать данный тип макета.
+			iconLayout: 'default#image',
+			// Своё изображение иконки метки.
+			iconImageHref: 'img/map-marker.png',
+			// Размеры метки.
+			iconImageSize: [367, 190],
+			// Смещение левого верхнего угла иконки относительно
+			// её "ножки" (точки привязки).
+			iconImageOffset: [-183, -190]
+		});
+		myMap.geoObjects
+		.add(myPlacemark);
+	})
 }
