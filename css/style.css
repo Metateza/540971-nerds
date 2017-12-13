@@ -141,7 +141,7 @@ a {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	width: 440px;
-	min-height: 42px;
+	min-height: 32px;
 	padding-top: 10px;
 	padding-left: 9px;
 	
@@ -707,14 +707,14 @@ a {
 	background-color: #eeeeee;
 }
 
-.filter-grid {
-	padding: 0;
-	margin-top: 52px;
-}
-
 .filter-feature {
 	padding: 0;
-	margin-top: 23px;
+	margin-top: 20px;
+}
+
+.filter-grid {
+	padding: 0;
+	margin-top: 50px;
 }
 
 .filter-input:hover + label,
@@ -1014,7 +1014,6 @@ border-top: 10px solid #010101;
 	-webkit-box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 	        box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 	opacity: 1;
-	z-index: -1;
 }
 
 .catalog-item:hover {
@@ -1040,9 +1039,9 @@ border-top: 10px solid #010101;
 	        align-items: center;
 	width: 360px;
 	height: 230px;
-	overflow: hidden;
 	
 	background-color: #eeeeee;
+	overflow: hidden;
 }
 
 .catalog-item:hover .description {
@@ -1052,7 +1051,7 @@ border-top: 10px solid #010101;
 }
 
 .description h3 {
-	margin-top: 21px;
+	margin-top: 25px;
 	margin-bottom: 0;
 	
 	font-size: 18px;
@@ -1065,14 +1064,16 @@ border-top: 10px solid #010101;
 
 .description p {
 	max-width: 230px;
-	height: 40px;
+	height: 45px;
 	
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 	
 	text-align: center;
 
 	line-height: 18px;
 	color: #666666;
+	
+	overflow: auto;
 }
 
 .description-sedona p,
